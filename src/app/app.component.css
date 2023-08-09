@@ -1,0 +1,15 @@
+.alert{
+    width: 19rem !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    border-left: 3px solid red !important;
+    background-color: white;
+    right: 10px !important;
+    top: 10px !important;
+    display: block;
+}
+
+input.ng-invalid.ng-touched{
+    box-shadow: 3px 2px 8px rgba(255, 0, 0, 0.637);
+    /* border: red solid 1px; */
+}

@@ -1,0 +1,4 @@
+<div class="d-flex flex-wrap">
+    <div>{{message}}</div>
+    <app-product *ngFor="let products of newdata;let i = index" [products] = "products"  (messageEvent)="receiveMessage($event)" ></app-product>
+</div>

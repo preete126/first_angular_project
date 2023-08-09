@@ -1,0 +1,25 @@
+<main>
+    <div class=" alert-danger shadow position-absolute  alert-dismissible d-flex align-items-center justify-content-between" class=" message ? 'alert' : 'd-none' ">
+      <button class="btn btn-close" style="height: fit-content;" data-bs-dismiss='alert'></button>
+      <div>{{message}}</div>
+    </div>
+    <form action=""  (submit)="onSubmit()" class="my-5 mx-auto w-50 p-3 shadow">
+      <div class="mb-3">
+        <label for="firstName">Firstname <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" required formControlName="firstName">
+      </div>
+      <div class="mb-3">
+        <label for="lastName">Lastname <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" required formControlName="lastName">
+      </div>
+      <div class="mb-3">
+        <label for="email">Email <span class="text-danger">*</span></label>
+        <input type="email" class="form-control" required formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label for="password">Password <span class="text-danger">*</span></label>
+        <input type="password" class="form-control" minlength="8" maxlength="30" required formControlName="password">
+      </div>
+      <button class="btn btn-success form-control w-50">Submit</button>
+    </form>
+  </main>
